@@ -2,6 +2,20 @@
 
 git clone https://github.com/balajigudala/new.git                           --> for master branch 
 
+git remote add origin https://github.com/YOUR.git                           --> to add our remote repo link.
+
+git branch -a                                                               --> to show all the branches
+
+git branch <name>                                                           --> to create a new branch
+
+git branch -d <name>                                                        --> to delete the purticular branch (-D) for force deletion
+
+git checkout                                                                --> to move from one branch to another branch 
+
+git checkout <branchname>                                                   --> to move to the specific branch
+
+git checkout -b <branchname>                                                --> to create a new branch and move on to the branch.
+
 git clone -b <branch name> https://github.com/balajigudala/new.git          --> for specific branch
 
 git fetch --all                                                             --> to get other branches after cloning a single branch 
@@ -25,6 +39,8 @@ git merge <brnh1> <brnh2>                                                   --> 
 git push                                                                    --> to push the master branch changes to remote repo.
 
 git push -u origin <branchname>                                             --> to push the branch changes to the remote repo.
+
+git push -d origin <branchname>                                             --> to push the deleted branch changes to the remote repo.
 
 git reset --soft HEAD~                                                      --> to delete the last commit.
 
