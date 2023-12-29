@@ -1,0 +1,43 @@
+# my_-git
+
+git clone https://github.com/balajigudala/new.git                           --> for master branch 
+
+git clone -b <branch name> https://github.com/balajigudala/new.git          --> for specific branch
+
+git fetch --all                                                             --> to get other branches after cloning a single branch 
+
+git add <files>                                                             --> to add the local changes to the staging area.
+
+git commit -m <commit message>                                              --> to add our staged files to local repo
+
+git log                                                                     --> to show the commit history.
+
+git log --oneline                                                           --> shows the log in one line.
+
+git show <commit id>                                                        --> show the info of all changes for the commit
+
+git pull                                                                    --> pulls the master branch from the local repo.
+
+git pull origin <branch name>                                               --> to pull the branch from the local repo
+
+git merge <brnh1> <brnh2>                                                   --> to merge the two branch data (no deletion of data is done).
+
+git push                                                                    --> to push the master branch changes to remote repo.
+
+git push -u origin <branchname>                                             --> to push the branch changes to the remote repo.
+
+git reset --soft HEAD~                                                      --> to delete the last commit.
+
+git restore <filename>                                                      --> restore the file as the file in local repo.
+
+git diff <filename>                                                         --> shows the changes of file that have done after the last commit.
+
+git format-patch -1 <commit-id>                                             --> generate the patchfile(lastcommitname.patch) based on the commit id.
+
+git apply <patch file name>                                                 --> to apply the patchfile data to the files where ever it requires.
+
+git apply -R <patch file name>                                              --> revert the changes made by the patch file.
+
+git apply --check <patch file name>                                         --> to verify the patch file appliable to our files or not.
+
+git apply --stat <patch file name>                                          --> for status of patch to our repo
