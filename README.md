@@ -56,4 +56,6 @@ git apply -R <patch file name>                                              --> 
 
 git apply --check <patch file name>                                         --> to verify the patch file appliable to our files or not.
 
-git apply --stat <patch file name>                                          --> for status of patch to our repo
+git apply --stat <patch file name>                                          --> for status of patch to our repo.
+
+git commit --amend                                                          --> helps to modify the commit message.
