@@ -8,21 +8,23 @@ git branch -a                                                               --> 
 
 git branch <name>                                                           --> to create a new branch
 
-git branch -d <name>                                                        --> to delete the purticular branch (-D) for force deletion
+git branch -d <name>                                                        --> to delete the purticular branch (-D) for force deletion.
 
-git checkout                                                                --> to move from one branch to another branch 
+git checkout                                                                --> to move from one branch to another branch. 
 
-git checkout <branchname>                                                   --> to move to the specific branch
+git checkout <branchname>                                                   --> to move to the specific branch.
+
+git checkout <commitid>                                                     --> to jump to specific commit.
 
 git checkout -b <branchname>                                                --> to create a new branch and move on to the branch.
 
-git clone -b <branch name> https://github.com/balajigudala/new.git          --> for specific branch
+git clone -b <branch name> https://github.com/balajigudala/new.git          --> for specific branch.
 
-git fetch --all                                                             --> to get other branches after cloning a single branch 
+git fetch --all                                                             --> to get other branches after cloning a single branch.
 
 git add <files>                                                             --> to add the local changes to the staging area.
 
-git commit -m <commit message>                                              --> to add our staged files to local repo
+git commit -m <commit message>                                              --> to add our staged files to local repo.
 
 git log                                                                     --> to show the commit history.
 
@@ -59,3 +61,13 @@ git apply --check <patch file name>                                         --> 
 git apply --stat <patch file name>                                          --> for status of patch to our repo.
 
 git commit --amend                                                          --> helps to modify the commit message.
+
+git revert HEAD                                                             --> to modify the last commit changes to previous 
+                                                                                https://sentry.io/answers/revert-a-git-repository-to-a-previous-commit/
+                                                                                git revert HEAD~3...HEAD --> to modify the last three commits
+git reset --hard HEAD~                                                      --> to delete the last commits 
+
+git stash                                                                   --> if you modified the pulled repo and don't won't the files in working repo and not to commit it
+                                                                                then we push this files to stack(a secret storage).
+                                                                                git stash list --> shows the files in stack.
+                                                                                git stash apply --> to add files to the working directory from stack.
