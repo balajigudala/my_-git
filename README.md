@@ -67,7 +67,10 @@ git revert HEAD                                                             --> 
                                                                                 git revert HEAD~3...HEAD --> to modify the last three commits
 git reset --hard HEAD~                                                      --> to delete the last commits 
 
-git stash                                                                   --> if you modified the pulled repo and don't won't the files in working repo and not to commit it
+git stash                                                                   --> if you modified the pulled repo and don't won't                                                                                    the files in working repo and not to commit it
                                                                                 then we push this files to stack(a secret storage).
                                                                                 git stash list --> shows the files in stack.
-                                                                                git stash apply --> to add files to the working directory from stack.
+                                                                                git stash show --> givws us the no.{n} of stashes.
+                                                                                git stash apply --> to add files to the working                                                                                    directory from stack.
+                                                                                git stash pop --> apply the removed changes by                                                                                     "git stash".
+                                                                                git stash apply stash{n} --> apply the nth stash.
