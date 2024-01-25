@@ -74,3 +74,6 @@ git stash                                                                   --> 
                                                                                 git stash apply --> to add files to the working                                                                                    directory from stack.
                                                                                 git stash pop --> apply the removed changes by                                                                                     "git stash".
                                                                                 git stash apply stash{n} --> apply the nth stash.
+git merge <branchname>                                                      --> Here the <branchname> branch is merged with the 
+                                                                                current branch(on head present)
+                                                            
